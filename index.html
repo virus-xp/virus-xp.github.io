@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png" />
+    <title>Delicious Bites</title>
+
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+  </head>
+  <body>
+    <!-- Content will go here -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          Delicious Bites
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- navbar-nav me-auto mb-2 mb-lg-0 gap-3 -->
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Move Toggle Button inside Navbar -->
+          <!-- <button
+            id="themeToggle"
+            class="btn btn-sm btn-outline-secondary rounded-pill px-3"
+          >
+            🌗 Toggle
+          </button> -->
+
+          <div style="margin-left: auto; margin-right: 20px">
+            <button
+              id="themeToggle"
+              class="btn btn-sm btn-outline-secondary rounded-pill px-3"
+            >
+              🌗 Toggle
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <header
+      class="hero-section d-flex align-items-center text-white"
+      style="background-image: url('images/bg/bg-1.jpg')"
+    >
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Welcome to Delicious Bites</h1>
+        <p class="lead">Taste the best dishes in town</p>
+        <a href="#" class="btn btn-warning btn-lg mt-3">View Menu</a>
+      </div>
+    </header>
+    <!-- Hero Section End -->
+
+    <!-- Menu Section Start -->
+    <section class="menu-section py-5" id="menu">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Our Menu</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="images/img/img-1.png"
+                class="card-img-top"
+                alt="Dish 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Grilled Chicken</h5>
+                <p class="card-text">
+                  Juicy grilled chicken with herbs and spices.
+                </p>
+                <p class="text-warning fw-bold">₹299</p>
+                <a href="#" class="btn btn-outline-warning">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="images/img/img-2.png"
+                class="card-img-top"
+                alt="Dish 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pasta Delight</h5>
+                <p class="card-text">
+                  Creamy Alfredo pasta loaded with cheese.
+                </p>
+                <p class="text-warning fw-bold">₹249</p>
+                <a href="#" class="btn btn-outline-warning">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="images/img/img-3.jpg"
+                class="card-img-top"
+                alt="Dish 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Veg Burger</h5>
+                <p class="card-text">
+                  Delicious veggie patty with crispy fries.
+                </p>
+                <p class="text-warning fw-bold">₹199</p>
+                <a href="#" class="btn btn-outline-warning">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section End -->
+
+    <!-- About Us Section Start -->
+    <section
+      class="about-section text-white d-flex align-items-center"
+      id="about"
+      style="background-image: url('images/bg/bg-2.jpg')"
+    >
+      <div class="container py-5 text-center">
+        <h2 class="fw-bold">About Us</h2>
+        <p class="lead mx-auto" style="max-width: 800px">
+          At Delicious Bites, we bring you the perfect blend of taste,
+          tradition, and innovation. Our chefs use fresh ingredients to craft
+          mouth-watering dishes that delight every palate.
+        </p>
+        <a href="#" class="btn btn-warning btn-lg mt-3">Learn More</a>
+      </div>
+    </section>
+    <!-- About Us Section End -->
+
+    <!-- Reviews Section Start -->
+    <section class="reviews-section py-5 bg-light" id="reviews">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">What Our Customers Say</h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Review 1 -->
+          <div class="col-md-5">
+            <div class="card p-3 shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="images/review/review-1.jpg"
+                  class="rounded-circle me-3"
+                  width="60"
+                  height="60"
+                  alt="Customer 1"
+                />
+                <div>
+                  <h5 class="mb-0">Ayesha Khan</h5>
+                  <small class="text-muted">Food Blogger</small>
+                </div>
+              </div>
+              <p class="card-text">
+                "Absolutely loved the ambiance and the food! The pasta was
+                delicious, and the staff was very friendly."
+              </p>
+              <div class="text-warning">★★★★★</div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="col-md-5">
+            <div class="card p-3 shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="images/review/review-2.jpg"
+                  class="rounded-circle me-3"
+                  width="60"
+                  height="60"
+                  alt="Customer 2"
+                />
+                <div>
+                  <h5 class="mb-0">Rahul Mehta</h5>
+                  <small class="text-muted">Local Guide</small>
+                </div>
+              </div>
+              <p class="card-text">
+                "Amazing service and superb quality. My kids enjoyed the burgers
+                a lot. Will definitely come again!"
+              </p>
+              <div class="text-warning">★★★★☆</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact-section py-5" id="contact">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Contact Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Type your message here..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-dark text-white pt-4">
+      <div class="container">
+        <div class="row">
+          <!-- Logo/Brand -->
+          <div class="col-md-4 mb-4">
+            <h4 class="fw-bold">Delicious Bites</h4>
+            <p>
+              Your favorite place for amazing food and unforgettable moments.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#menu" class="text-white text-decoration-none">Menu</a>
+              </li>
+              <li>
+                <a href="#about" class="text-white text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#reviews" class="text-white text-decoration-none"
+                  >Reviews</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-white text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="col-md-4 mb-4">
+            <h5>Follow Us</h5>
+            <a href="#" class="text-white me-3"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+            <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="text-center py-3 border-top border-secondary mt-3">
+          &copy; 2025 Delicious Bites. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- OWN JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
