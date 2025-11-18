@@ -1,0 +1,5 @@
+{
+  "name": "Java Q&A Showcase",
+  "description": "A beautifully designed web application that provides detailed answers, including theory and code examples, to common Java programming questions. Features include styled code blocks with a copy-to-clipboard functionality.",
+  "requestFramePermissions": []
+}
