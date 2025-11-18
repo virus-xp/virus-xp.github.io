@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: "/virus-xp.github.io/",   // <-- REQUIRED FOR GITHUB PAGES
+    base: "/",   // <-- REQUIRED FOR GITHUB PAGES
 
     server: {
       port: 3000,
